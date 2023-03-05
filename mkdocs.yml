@@ -1,0 +1,7 @@
+site_name: Edgebox Docs
+site_url: https://docs.edgebox.io
+docs_dir: src
+theme: material
+nav:
+  - Home: index.md
+  - About: about.md

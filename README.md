@@ -1,17 +1,56 @@
-Hi! Here you'll be able to find all documentation for the Edgebox project.
+# Edgebox Docs
 
-It starts from the beginning and dwelves deeply into all subject composing the product. Once you find a specific module you want to look in more detail, you'll be linked to the specific repository where further technical information for that module can be found.
+This repository contains the documentation for the Edgebox project, from a overall usage and configuration prespective.
+If you're looking for technical documentation regarding the Edgebox codebase, please refer to the respective repository for documentation.
 
-We use public GitHub repositories to develop our work, and try to separate the code into purposeful parts that can be individually developed.
+This project uses Mkdocs. For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-Our GitHub organization can be seen at https://github.com/edgebox-iot.
+## Installation
 
-Because our code is open-source, we will always document the entirity of our processes and internals as best as we can, but we understand not everybody wants to know **everything**, and we want to make everyone's life easier. Thus, we decided to separate the documentation into two different areas: "For Users" and "For Tinkers". One for the more basic, non-advanced, usage-prespective documentation. The other with all the neaty greaty of how things work, up to the source code.
+### Prerequisites
 
-## Documentation topics "For Users"
+- Python 3.6 or higher
 
-- (This list is being curated and will be available soon)
+### Install Dependencies
 
-## Documentation topics "For Tinkers"
+```bash
+pip install -r requirements.txt
+```
 
-- (This list is being curated and will be available soon)
+## Commands
+
+- `mkdocs serve` - Start the live-reloading docs server.
+- `mkdocs build` - Build the documentation site.
+- `mkdocs -h` - Print help message and exit.
+
+## Project layout
+
+```bash
+    mkdocs.yml    # The configuration file.
+    src/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
+```
+
+## Contributing
+
+Any contributions are welcome. Please open a pull request with your changes, and we will review them.
+
+### Adding a new page
+
+To add a new page, create a new markdown file in the `src` directory. Then, add the page to the `nav` section of `mkdocs.yml`:
+
+```yaml
+nav:
+  - Home: index.md
+  # (...)
+  - New Page: new-page.md
+```
+
+## Deployment
+
+This project is deployed to [GitHub Pages](https://pages.github.com/) automatically on push to the main branch. To deploy manually, run:
+
+```bash
+mkdocs gh-deploy
+```
