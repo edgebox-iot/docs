@@ -6,14 +6,19 @@ nav:
   - About: about.md
 theme:
   name: material
+  logo: assets/logo.png
   palette: 
     # Palette toggle for light mode
     - scheme: default
+      primary: white
+      accent: blue
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
+      primary: white
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
