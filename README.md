@@ -1,35 +1,22 @@
 # Edgebox Docs
 
-This repository contains the documentation for the Edgebox project, from a overall usage and configuration prespective.
+This repository contains the documentation for the Edgebox project, from a overall usage and configuration perspective.
+
 If you're looking for technical documentation regarding the Edgebox codebase, please refer to the respective repository for documentation.
 
-This project uses Mkdocs. For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This project is built using [Mkdocs](https://www.mkdocs.org).
 
-## Installation
+## Running locally
 
-### Prerequisites
-
-- Python 3.6 or higher
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Docker setup
-
-Alternatively use the provided Docker setup to get things running:
+The quickest way to get going is using the provided docker-compose setup:
 
 ```bash
 docker-compose up
 ```
 
-## Commands
+Once up navigate to `http://localhost:8000`.
 
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+This setup provides file watching so any new changes will force the site to be rebuilt.
 
 ## Project layout
 
