@@ -17,6 +17,14 @@ This project uses Mkdocs. For full documentation visit [mkdocs.org](https://www.
 pip install -r requirements.txt
 ```
 
+### Docker setup
+
+Alternatively use the provided Docker setup to get things running:
+
+```bash
+docker-compose up
+```
+
 ## Commands
 
 - `mkdocs serve` - Start the live-reloading docs server.
