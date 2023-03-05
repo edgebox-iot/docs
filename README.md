@@ -47,6 +47,5 @@ nav:
 This project is deployed to [GitHub Pages](https://pages.github.com/) automatically on push to the main branch. To deploy manually, run:
 
 ```bash
-mkdocs build
 mkdocs gh-deploy
 ```
