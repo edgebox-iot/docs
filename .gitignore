@@ -4,4 +4,5 @@
 # Output html files should be ignored for version control
 # https://www.mkdocs.org/user-guide/configuration/#site_dir
 
-site/
+/site/
+/.venv/
