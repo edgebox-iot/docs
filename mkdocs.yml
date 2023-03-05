@@ -3,7 +3,10 @@ site_url: https://docs.edgebox.io
 docs_dir: src
 nav:
   - Home: index.md
-  - About: about.md
+  - Overview: overview.md
+  - Getting Started: getting-started.md
+  - Configuration: configuration.md
+  - Contributing: contributing.md
 theme:
   name: material
   logo: assets/logo.png
