@@ -49,6 +49,8 @@ The available commands are:
  - edgebox -s | --setup -> Setup script, configures GitHub SSH Key (if it exists), and downloads all repositories and starts all components. Project files are available at `~/home/system/components` >
  - edgebox -u | --update -> Pulls all newest commits form every repository in the project.
 
+![alt text](../assets/images/post-install-ssh-access.png)
+
 ## Other Platforms
 
 We have a simple to use installer that will build ready to use images of Edgebox for various environments, including DigitalOcean.
