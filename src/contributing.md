@@ -2,7 +2,7 @@
 
 Thank you for your interest in making a contribution! 
 
-All changes, small or big, are welcome, and regardless of who you are, we are always happy to work together to make your contribution as strong as possible. We follow the [Covenant Code of Conduct](../code_of_conduct), so we ask you to uphold it. Be kind to everyone in the community, and please report unacceptable behavior to info@edgebox.io
+All changes, small or big, are welcome, and regardless of who you are, we are always happy to work together to make your contribution as strong as possible. We follow the [Covenant Code of Conduct](/others/code-of-conduct), so we ask you to uphold it. Be kind to everyone in the community, and please report unacceptable behavior to info@edgebox.io
 
 ## Questions, Feature Requests, and Discussions
 
