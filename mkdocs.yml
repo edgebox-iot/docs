@@ -3,7 +3,16 @@ site_url: https://docs.edgebox.io
 docs_dir: src
 nav:
   - Home: index.md
-  - About: about.md
+  - Overview: overview.md
+  - Getting Started: getting-started.md
+  - Contributing: contributing.md
+  - Setup:
+    - Installation: setup/installation.md
+    - Configuration: setup/configuration.md
+    - Execution: setup/execution.md
+  - Others:
+    - Code of Conduct: others/code-of-conduct.md
+    - Common Errors: others/common-errors.md
 theme:
   name: material
   logo: assets/logo.png
@@ -23,3 +32,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  features:
+    - navigation.sections
+    - search.suggest
+    - search.highlight
