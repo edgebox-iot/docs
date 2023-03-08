@@ -44,16 +44,16 @@ If you have a serial cable connected, installer output can be followed there, to
 
 ### Setup Script
 
-Included after installation in `~/home/system/` is a basg script with the name `edgebox.sh`. This script can be ran after installation to setup the necessary components for a proper functioning Edgebox. It can be run anywhere in a terminal as it is pre-included in the PATH.
+Included after installation in `~/home/system/` is a bash script with the name `edgebox.sh`. This script can be ran after installation to setup the necessary components for a proper functioning Edgebox. It can be run anywhere in a terminal as it is pre-included in the PATH.
 
 The recommendation is that after installation, you should run the setup script. The system is SSH accessible through `ssh system@edgebox`, using the password set on the `installer-config.txt` file.
 
 The available commands are:
 
- - edgebox -s | --setup -> Setup script, configures GitHub SSH Key (if it exists), and downloads all repositories and starts all components. Project files are available at `~/home/system/components` >
- - edgebox -u | --update -> Pulls all newest commits form every repository in the project.
+- `edgebox -s | --setup` -> Setup script, configures GitHub SSH Key (if it exists), and downloads all repositories and starts all components. Project files are available at `~/home/system/components` >
+- `edgebox -u | --update` -> Pulls all newest commits form every repository in the project.
 
-![alt text](../assets/images/post-install-ssh-access.png)
+![accessing edgebox via ssh](../assets/images/post-install-ssh-access.png)
 
 ## Other Platforms
 
