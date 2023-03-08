@@ -612,10 +612,12 @@
 <li>A way to write the SD Card from your computer (e.g. SD Card reader)</li>
 </ul>
 <h3 id="setup">Setup</h3>
+<p>After you have the hardware, you need to setup the SD card. This is a one-time process that will be aided by our <code>ua-netinst-config</code> tool.</p>
+<p><img alt="ua-netinst-config installation process" src="../../assets/images/ua-netinst-config-install.gif" /></p>
 <ul>
-<li>Go to <a href="https://github.com/edgebox-iot/raspberrypi-ua-netinst/releases/latest">raspberrypi-ua-netinst latest release page</a> and download the latest version .zip file. This installer archive contains all firmware files and the base installer for the latest version of a stripped down version of Debian.</li>
-<li>Format your SD card as <strong>FAT32</strong> (MS-DOS on <em>Mac OS X</em>) and extract the downloaded .zip file  directly into the SD Card.</li>
-<li>Copy the contents of the <a href="https://github.com/edgebox-iot/ua-netinst-config">ua-netinst-config repository</a> into the folder <code>/raspberrypi-ua-netinst/config/</code> in the SD card.</li>
+<li>Go to <a href="https://github.com/edgebox-iot/ua-netinst-config">ua-netinst-config</a> and download the latest version .zip file or clone the repository. This installer will be able to configure an operating system image that runs Edgebox on the Raspberry Pi.</li>
+<li>Run the command <code>make install</code> to start the configuration process for the image. Answer the questions and wait for the process to finish.</li>
+<li>Copy the contents inside the resulting "image" folder into a freshly formatted SD card as <strong>FAT32</strong> (MS-DOS on <em>Mac OS X</em>)</li>
 </ul>
 <h3 id="installation">Installation</h3>
 <p>Under normal circumstances, you can just insert the SD card, power on your Edgebox and cross your fingers.</p>
