@@ -267,25 +267,38 @@
     Dashboard
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#storage" class="md-nav__link">
     Storage
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#backups" class="md-nav__link">
     Backups
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#edgeapps" class="md-nav__link">
     Edgeapps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    System Architecture
   </a>
   
 </li>
@@ -503,25 +516,38 @@
     Dashboard
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#storage" class="md-nav__link">
     Storage
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#backups" class="md-nav__link">
     Backups
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#edgeapps" class="md-nav__link">
     Edgeapps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    System Architecture
   </a>
   
 </li>
@@ -547,17 +573,41 @@ Accessing your Edgebox system is as simple as opening a web browser and navigati
 <h2 id="dashboard">Dashboard</h2>
 <p>The dashboard is the main interface for the Edgebox system. It provides a simple way to control the system, and access the various features and applications.</p>
 <p><img alt="Dashboard" src="../assets/images/dashboard-home.png" /></p>
-<h2 id="storage">Storage</h2>
+<h3 id="storage">Storage</h3>
 <p>Edgebox provides a simple way to store your data. It is a simple, yet powerful, file storage system.  In the storage section, you can see information about the storage occupation, attach new storage devices, and manage the storage.</p>
 <p><img alt="Storage" src="../assets/images/dashboard-storage.png" /></p>
-<h2 id="backups">Backups</h2>
+<h3 id="backups">Backups</h3>
 <p>The backup section allows you to backup your data to a remote location. It is a simple and straightforward way to backup your data to a remote location or an external storage device, and restore it if needed. Backups are encrypted before transit so they are fully secure and only accessible by you.</p>
 <p>In this screen, you can also see all the backups you have made, and restore your edgebox system to one of the previous backups.</p>
 <p><em>Note: The backups function is currently in development. It will be available in a future release.</em></p>
 <p><img alt="Backups" src="../assets/images/dashboard-backups.png" /></p>
-<h2 id="edgeapps">Edgeapps</h2>
+<h3 id="edgeapps">Edgeapps</h3>
 <p>Edgeapps are the applications that run on the Edgebox system. They are one of the highlight features. They are the applications that provide the functionality that you would normally get from cloud services. They can be easily installed, uninstalled, updated and configured.</p>
 <p><img alt="Edgeapps" src="../assets/images/dashboard-edgeapps.png" /></p>
+<h2 id="system-architecture">System Architecture</h2>
+<p>The Edgebox system is composed of several components. The main components are:</p>
+<ul>
+<li><code>edgeboxctl</code>, which is the main system control service, running at the operating system level, and responsible for interfacing between the operating system and the edgebox system, providing features like running operations on a clock tick, docker container orchestration management (via <code>ws</code> or <code>directly</code>) and status reporting (parsing from various sources and sometiemes saving this information in the <code>api</code> db for dashboard display).</li>
+<li><code>api</code>, which currently is responsible for serving a database that manages the dashboard and status report storage created by <code>edgeboxctl</code>. It also hosts the main web dashboard where the user can manage some of the system features. <code>api</code> never interfaces directly with <code>edgeboxctl</code>, instead leaves "tasks" in its database that are picked up by the system service and executed accordingly.</li>
+<li><code>apps</code> are the applications that run on the Edgebox system. They are the container definitions that provide the services necessary to create the apps and give you the functionality that you would normally get from cloud services. Each application has its own folder and follows some conventions regarding configuration file definitions, binary file definitioons, and others. <code>ws</code> uses this information to create your containerized applications.</li>
+<li><code>ws</code> is the web services orchestration module. It is a service itself (a proxy pass) that is responsible for routing the requests to the correct applications installed in the system, but also a set of utilities that can read the <code>apps</code> folder for definitions, manage their state, and order <code>docker</code> to run them.</li>
+</ul>
+<pre class="mermaid"><code>graph LR
+    E[edgeboxctl] --&gt; WS[ws];
+    WS --&gt; DOCKER;
+    E --&gt; DOCKER[Docker];
+    WS --&gt; APPS[Apps];
+    DOCKER --&gt; API[Api/Dashboard container];
+    E --&gt; APIV[Api/Dashboard container volume];
+    API --&gt; APIV;
+    DOCKER &lt;--&gt; PROXY[ws-proxy container];
+    DOCKER --&gt; EDGEAPP[edgeapp container];
+    PROXY &lt;--&gt; EDGEAPP;
+    EDGEAPP &lt;--&gt; EDGEAPPV[Edgeapp container volume];
+    PROXY &lt;--&gt; API;
+    PROXY &lt;--&gt; CF[CloudFlare Tunnel];
+    CF &lt;--&gt; EU[External User];
+    PROXY &lt;--&gt; NU[Network User];</code></pre>
 
 
 
