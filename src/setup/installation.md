@@ -22,9 +22,13 @@ To run Edgebox on a Raspberry Pi, you will need the following hardware:
 
 ### Setup
 
-- Go to [raspberrypi-ua-netinst latest release page](https://github.com/edgebox-iot/raspberrypi-ua-netinst/releases/latest) and download the latest version .zip file. This installer archive contains all firmware files and the base installer for the latest version of a stripped down version of Debian.
-- Format your SD card as **FAT32** (MS-DOS on _Mac OS X_) and extract the downloaded .zip file  directly into the SD Card.
-- Copy the contents of the [ua-netinst-config repository](https://github.com/edgebox-iot/ua-netinst-config) into the folder `/raspberrypi-ua-netinst/config/` in the SD card.
+After you have the hardware, you need to setup the SD card. This is a one-time process that will be aided by our `ua-netinst-config` tool.
+
+![ua-netinst-config installation process](../assets/images/ua-netinst-config-install.gif)
+
+- Go to [ua-netinst-config](https://github.com/edgebox-iot/ua-netinst-config) and download the latest version .zip file or clone the repository. This installer will be able to configure an operating system image that runs Edgebox on the Raspberry Pi.
+- Run the command `make install` to start the configuration process for the image. Answer the questions and wait for the process to finish.
+- Copy the contents inside the resulting "image" folder into a freshly formatted SD card as **FAT32** (MS-DOS on _Mac OS X_)
 
 ### Installation
 
