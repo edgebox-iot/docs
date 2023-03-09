@@ -99,7 +99,9 @@ To build the image, run the following command:
 packer build -only=digitalocen.ubuntu .
 ```
 
-This will use the DigitalOcean API to create a droplet and configure it, then create an image from the droplet. The image will then be available in your DigitalOcean account.
+This will use the DigitalOcean API to create a droplet and configure it, then create an image from the droplet. This process takes about 20 minutes. The image will then be available in your DigitalOcean account as a snapshot.
+
+![image builder command for digital ocean](../assets/images/image-builder-digitalocean-build-command.png)
 
 ### Create a Droplet
 
