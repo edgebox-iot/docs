@@ -109,3 +109,13 @@ Once the image is built, you can create a new Droplet using the image you just c
 
 ???+ abstract "DigitalOcean Docs"
     Details on the available options can be seen on the [DigitalOcean Documentation for new droplet creation](https://www.digitalocean.com/docs/droplets/how-to/create/).
+
+On the DigitalOcean dashboard, navigate to the "Images" section and select the "Snapshots" tab. You should see the image you just created. Click on the "Create Droplet" button in the image dropdown, to create a new droplet based on it.
+
+![digitalocean images section](../assets/images/digitalocean-images-index.jpg)
+
+Continue filling the necessary information on the page that follows. Pay special attention to the "Choose Authentication" section, where you can select the SSH key you want to use to access the droplet, or setup a root password for the droplet.
+
+![creating a new droplet and adding a password for root login](../assets/images/digitalocean-new-snapshot-droplet-auth.png)
+
+Once the droplet is created, you can access it using the SSH key you selected or the root password you set. You will need to do this to setup your dashboard access. For more details, check the [Configuration](./configuration.md) section.
