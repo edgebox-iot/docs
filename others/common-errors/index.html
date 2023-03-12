@@ -70,6 +70,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#common-errors" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -397,10 +402,43 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Common Errors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Common Errors
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-connection-warning" class="md-nav__link">
+    SSH Connection Warning
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -430,6 +468,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-connection-warning" class="md-nav__link">
+    SSH Connection Warning
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -444,9 +499,15 @@
                   
 
 
-  <h1>Common Errors</h1>
-
-
+<h1 id="common-errors">Common Errors</h1>
+<p>Here are some common errors that you may encounter while setting up or using edgebox. These are not exhaustive, but should cover the most common issues you may face.</p>
+<h2 id="ssh-connection-warning">SSH Connection Warning</h2>
+<p><img alt="SSH Connection Warning" src="../../assets/images/common-issues-ssh-error-reinstall.png" /></p>
+<p>If you are trying to connect to your edgebox using SSH and you get a warning, it is likely that the you had a previous box with the same name and the SSH key has changed. To fix this, you can delete the old key from your <code>~/.ssh/known_hosts</code> file. Run the following command:</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-R<span class="w"> </span>edgebox.local
+</code></pre></div>
+<p>If you try connecting again, the issue should now be clear.</p>
+<p><img alt="SSH Connection Keygen Renew" src="../../assets/images/common-issues-ssh-error-keygen.png" /></p>
 
 
 
