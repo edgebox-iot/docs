@@ -1,6 +1,8 @@
 site_name: Edgebox Documentation
 site_url: https://docs.edgebox.io
 docs_dir: src
+repo_url: https://github.com/edgebox-iot/docs
+edit_uri: edit/main/src/
 nav:
   - Overview: index.md
   - Getting Started: getting-started.md
@@ -53,6 +55,7 @@ theme:
     - navigation.sections
     - search.suggest
     - search.highlight
+    - content.action.edit
 markdown_extensions:
   - attr_list
   - md_in_html
