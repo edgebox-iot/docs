@@ -1,0 +1,1377 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.edgebox.io/usage/edgeapps/">
+      
+      
+        <link rel="prev" href="../backups/">
+      
+      
+        <link rel="next" href="../settings/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>EdgeApps - Edgebox Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#edgeapps" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Edgebox Documentation" class="md-header__button md-logo" aria-label="Edgebox Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Edgebox Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EdgeApps
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Edgebox Documentation" class="md-nav__button md-logo" aria-label="Edgebox Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Edgebox Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/local/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Locally
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/raspberry-pi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Raspberry Pi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/other-platforms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other Platforms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/post-install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Post Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/initial-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initial Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/external-access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External Access
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/backups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dashboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    EdgeApps
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    EdgeApps
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-edgeapps" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Available EdgeApps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Dashboard Sections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Dashboard Sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-an-edgeapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      👨‍🏫 Installing an EdgeApp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-an-edgeapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuring an EdgeApp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-edgeapp-external-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Per-EdgeApp External access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-edgeapp-basic-authentication-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Per-EdgeApp Basic Authentication Credentials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs-and-edgeapp-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Logs and EdgeApp messages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uninstalling-an-edgeapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Uninstalling an EdgeApp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shell-access/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shell Access
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Others
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Others
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/common-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/system-architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/code-of-conduct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-edgeapps" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Available EdgeApps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Dashboard Sections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Dashboard Sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-an-edgeapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      👨‍🏫 Installing an EdgeApp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-an-edgeapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuring an EdgeApp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-edgeapp-external-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Per-EdgeApp External access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-edgeapp-basic-authentication-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Per-EdgeApp Basic Authentication Credentials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs-and-edgeapp-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Logs and EdgeApp messages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uninstalling-an-edgeapp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Uninstalling an EdgeApp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="edgeapps">Edgeapps</h1>
+<p><strong>Edgeapps are the applications that run on the Edgebox system.</strong> These applications expand the capabilities of Edgebox by providing functionality that you would normally get from (paid) cloud services.</p>
+<p>EdgeApps can be easily installed, uninstalled, updated and configured using the dashboard only.</p>
+<p><img alt="Edgeapps" src="../../assets/images/dashboard-edgeapps.png" /></p>
+<p>In the "<em><strong>EdgeApps</strong></em>" page, accessible through the dashboard main menu, you can see all the apps that are installed in your system, manage them, and install new apps.</p>
+<h2 id="available-edgeapps">✅ Available EdgeApps</h2>
+<p>Edgebox allows you to 1-click install a list of selected apps, each handpicked to provide some specific functionality. You can install and use them as you need. Here's a reference of the apps that are currently available, and what they do:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th style="text-align: center;">Companion Apps</th>
+<th style="text-align: center;">Is Stable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/usage/edgeapps/actual"><code>actual</code></a></td>
+<td>Handles personal or small business budgeting</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/appsmith"><code>appsmith</code></a></td>
+<td>Allows you to build tools to automate tasks and interact with other services. Create data entry apps, dashboards, etc</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/bitwarden"><code>bitwarden</code></a></td>
+<td>Securely manage and synchronize passwords and 2FA codes across devices and other people</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/calibre"><code>calibre</code></a></td>
+<td>Handles E-book library management, format conversion, and syncing to e-book reader devices</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/chatpad"><code>chatpad</code></a></td>
+<td>A front-end to automate, communicate, and save your conversations with ChatGPT or other AI Providers</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/conduit"><code>conduit</code></a></td>
+<td>A provider to send and receive messages in a decentralized, end-2-end encrypted and trustless manner. Includes a web front-end (Element) to use it.</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/filebrowser"><code>filebrowser</code></a></td>
+<td>Web file management tool to access every folder and view text files inside the Edgebox system or apps it is running</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/focalboard"><code>focalboard</code></a></td>
+<td>Helps track tasks, plan projects, and organize information shared among family or teamu members</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/gitea"><code>gitea</code></a></td>
+<td>Electronic Git solution, manages repositories, issues, pull requests and actions</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/home-assistant"><code>home-assistant</code></a></td>
+<td>An automation of your home: lights, temperature, sensors, notifications etc</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/invidious"><code>invidious</code></a></td>
+<td>An alternative front-end to YouTube</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/jellyfin"><code>jellyfin</code></a></td>
+<td>Manage, stream, and play back media from Edgebox</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/jupyter"><code>jupyter</code></a></td>
+<td>Compose, run, and share documents that contain interactive code, equations, visualizations and text</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/listmonk"><code>listmonk</code></a></td>
+<td>Manage and send newsletters or promotional mails to a mailing list</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/n8n"><code>n8n</code></a></td>
+<td>Manage automated workflows or tasks</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/nextcloud"><code>nextcloud</code></a></td>
+<td>File hosting services: sync, share, and access files across devices</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/planka"><code>planka</code></a></td>
+<td>Project management which includes boards for task tracking, card arrangement etc</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/pocketbase"><code>pocketbase</code></a></td>
+<td>Ideal for note-taking, knowledge and content management</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/podgrab"><code>podgrab</code></a></td>
+<td>Handy in managing and downloading subscribed podcast episodes</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/tandoor"><code>tandoor</code></a></td>
+<td>Save, manage, and track custom personal and professional recipes</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/traggo"><code>traggo</code></a></td>
+<td>Handles time tracking needs. Track how much time your tasks take, organize them by projects and categories of work, and check statistics</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/umami"><code>umami</code></a></td>
+<td>Collects website analytics and has metrics pages and custom events tracking</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/uptimekuma"><code>uptimekuma</code></a></td>
+<td>Monitors the uptime status of your site, server, or API</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><a href="/usage/edgeapps/webrcade"><code>webrcade</code></a></td>
+<td>Explore, play and share a collection of games</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dashboard-sections">🖥️ Dashboard Sections</h2>
+<h3 id="installing-an-edgeapp">👨‍🏫 Installing an EdgeApp</h3>
+<p>Locate the EdgeApp you want to install from the available list, and click the "<em><strong>Install &amp; Run</strong></em>" button. The app will be installed and started, and you will be redirected back to the apps list once the app is installed and ready to use.</p>
+<p><img alt="Installing an EdgeApp" src="../../assets/images/edgeapps-install.png#only-light" />
+<img alt="Installing an EdgeApp" src="../../assets/images/edgeapps-install-dark.png#only-dark" /></p>
+<!-- ![Installing an EdgeApp](../assets/gifs/edgeapps-install-and-run.gif) -->
+
+<h3 id="configuring-an-edgeapp">⚙️ Configuring an EdgeApp</h3>
+<p>Some apps require configuration before they can be used. If an app requires information from you before starting for the first time, it will show the "<em><strong>Configure</strong></em>" button instead of "<em><strong>Install &amp; Run</strong></em>. Clicking on it will show the app details page, where you can configure the app as needed.</p>
+<p><img alt="Configuring an EdgeApp" src="../../assets/images/edgeapps-configure-edgeapp.png#only-light" />
+<img alt="Configuring an EdgeApp" src="../../assets/images/edgeapps-configure-edgeapp-dark.png#only-dark" /></p>
+<p>Fill in the required information, and click the "<em><strong>Save</strong></em>" button. The app will be configured, and you will be shown the option to install the EdgeApp, if it is not yet installed.</p>
+<div class="admonition question">
+<p class="admonition-title">Why do apps need to be configured?</p>
+<p>Sometimes an app requires some information from you before it can be used. For example, the Nextcloud app requires you to set an admin username and password before it can be used. This is because the app needs to know how to access the database, and the admin user is the one that can configure the app. Each app can have its own configuration needs, and the app details page will show you what you need to configure.</p>
+</div>
+<h3 id="per-edgeapp-external-access">🔐 Per-EdgeApp External access</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>To allow an app to be accessed from outside your local network, you need to make sure external access is configured. Check the <a href="/configuration/external-access">external access</a> page for more information.</p>
+</div>
+<p>EdgeApps by default run in a private mode (only accessible in a local network), but they  can be accessed from outside your local network when configured to do so. This means that you can access the app from anywhere in the world, as long as you have an internet connection. This is useful if you want to access your data from outside your home, or if you want to share your data with someone else.</p>
+<p>To allow an app to be accessed from outside your local network, click on the "<em><strong>Bring Online</strong></em>" button in the app card or detail page.</p>
+<p><img alt="Bringing an EdgeApp Online" src="../../assets/images/edgeapps-bringonline.png#only-light" />
+<img alt="Bringing an EdgeApp Online" src="../../assets/images/edgeapps-bringonline-dark.png#only-dark" /></p>
+<p>This will make the app accessible via the internet. You can also click on the "<em><strong>Block Online Access</strong></em>" button to block app access to the local network only.</p>
+<details class="info">
+<summary>Cloud version apps cannot be accessed in any way other than via the internet, but you can still fully block internet access to an app while having it run in the background.</summary>
+<p>The cloud version of Edgebox is only accessible via the internet, so all apps are accessible via the internet by default. You can still block access to an app by clicking on the "<em><strong>Block Online Access</strong></em>" button, but then it will only be available in the internal instance private network.</p>
+</details>
+<h3 id="per-edgeapp-basic-authentication-credentials">🔗 Per-EdgeApp Basic Authentication Credentials</h3>
+<p>In the EdgeApp details page, you can also configure the basic authentication credentials for the app. This is useful if you want to have an app available via the internet, but with an added layer of protection against any third party being able to call your app.</p>
+<p>You can configure a username and password that will be required to access the app via the "<em><strong>Security</strong></em>" section of the app details page. Once you have configured the credentials, click the "<em><strong>Save</strong></em>" button and wait a few seconds while the EdgeApp restarts and reconfigures itself. From here on, Accessing your app will require you to enter the username and password once per different device/browser combination you use to access it.</p>
+<p><img alt="Configuring Basic Authentication Credentials" src="../../assets/images/edgeapps-basicauth.png" /></p>
+<h3 id="logs-and-edgeapp-messages">📄 Logs and EdgeApp messages</h3>
+<p>You can check the logs of an EdgeApp by clicking on the "<em><strong>Logs</strong></em>" button in the app card or detail page. This will show you the internal logs of the app, and can be useful to get more information when you're facing issues with a specific app.</p>
+<p><img alt="Checking EdgeApp Logs" src="../../assets/images/edgeapps-logs.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The logs are only available for apps that are currently running. If an app is not running, you will not be able to check its logs. Fore more detailed information on logs for both the Edgebox system and EdgeApps, check the <a href="/configuration/logs">logs documentation page</a>.</p>
+</div>
+<h3 id="uninstalling-an-edgeapp">❌ Uninstalling an EdgeApp</h3>
+<p>To uninstall an EdgeApp, go to the app details page and scroll down to the "<em><strong>Advanced</strong></em>" section. Ckick tge "<em><strong>Reset App</strong></em>" button.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Uninstalling an app will remove all data associated with it. This means that if you uninstall an app, you will lose all data that is stored in it. This includes any configuration you might have done, and any data you might have stored in the app. Unless you have a backup of the app, you will not be able to recover any data from it after you reset it.</p>
+</div>
+<p>This will remove the app from your system, and it will show as "<em><strong>Not Installed</strong></em>" in the apps list.</p>
+<p><img alt="Uninstalling an EdgeApp" src="../../assets/images/edgeapps-resetapp.png#only-light" />
+<img alt="Uninstalling an EdgeApp" src="../../assets/images/edgeapps-resetapp-dark.png#only-dark" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>

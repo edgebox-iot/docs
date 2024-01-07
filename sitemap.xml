@@ -16,12 +16,97 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.edgebox.io/configuration/backups/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/configuration/external-access/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/configuration/initial-setup/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/configuration/logs/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/configuration/post-install/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/configuration/updates/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/installation/cloud/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/installation/local/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/installation/other-platforms/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/installation/raspberry-pi/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.edgebox.io/others/code-of-conduct/</loc>
          <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/others/common-errors/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/others/system-architecture/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/backups/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/dashboard/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/settings/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/shell-access/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/storage/</loc>
          <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
