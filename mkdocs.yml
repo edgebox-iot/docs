@@ -1,18 +1,35 @@
-site_name: Edgebox Docs
+site_name: Edgebox Documentation
 site_url: https://docs.edgebox.io
 docs_dir: src
 nav:
-  - Home: index.md
-  - Overview: overview.md
+  - Overview: index.md
   - Getting Started: getting-started.md
   - Contributing: contributing.md
-  - Setup:
-    - Installation: setup/installation.md
-    - Configuration: setup/configuration.md
-    - Execution: setup/execution.md
+  - Installation:
+    - Locally: installation/local.md
+    - Raspberry Pi: installation/raspberry-pi.md
+    - Cloud Version: installation/cloud.md
+    - Other Platforms: installation/other-platforms.md
+  - Configuration:
+    - Post Install: configuration/post-install.md
+    - Initial Setup: configuration/initial-setup.md
+    - External Access: configuration/external-access.md
+    # - Storage: configuration/storage.md
+    - Backups: configuration/backups.md
+    - Logs: configuration/logs.md
+    - Updates: configuration/updates.md
+  - Usage:
+    - Dashboard: usage/dashboard.md
+    - Storage: usage/storage.md
+    - Backups: usage/backups.md
+    - EdgeApps: usage/edgeapps.md
+    - Settings: usage/settings.md
+    - Shell Access: usage/shell-access.md
   - Others:
-    - Code of Conduct: others/code-of-conduct.md
     - Common Errors: others/common-errors.md
+    - System Architecture: others/system-architecture.md
+    - Code of Conduct: others/code-of-conduct.md
+
 theme:
   name: material
   logo: assets/logo.png
@@ -37,8 +54,16 @@ theme:
     - search.suggest
     - search.highlight
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
