@@ -2,47 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.edgebox.io/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/contributing/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/getting-started/</loc>
-         <lastmod>2023-03-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.edgebox.io/overview/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/others/code-of-conduct/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/others/common-errors/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.edgebox.io/setup/configuration/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <loc>https://docs.edgebox.io/usage/edgeapps/actual/</loc>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.edgebox.io/setup/execution/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <loc>https://docs.edgebox.io/usage/edgeapps/appsmith/</loc>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.edgebox.io/setup/installation/</loc>
-         <lastmod>2023-03-16</lastmod>
+         <loc>https://docs.edgebox.io/usage/edgeapps/bitwarden/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/calibre/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/chatpad/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/conduit/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/filebrowser/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/focalboard/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/gitea/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/home-assistant/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/invidious/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/jellyfin/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/jupyter/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/listmonk/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/n8n/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/nextcloud/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/planka/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/pocketbase/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/tandoor/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/traggo/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/umami/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/uptimekuma/</loc>
+         <lastmod>2024-01-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.edgebox.io/usage/edgeapps/webrcade/</loc>
+         <lastmod>2024-01-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
