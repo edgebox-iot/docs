@@ -29,7 +29,8 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      - run: uv run mkdocs build
+      - name: mkdocs build
+        run: uv run mkdocs build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
