@@ -25,12 +25,12 @@ jobs:
         uses: astral-sh/setup-uv@v3
         with:
           enable-cache: true
+          cache-dependency-glob: 'requirements.txt'
 
       - name: Install dependencies
-        run: uv sync --frozen
+        run: uv pip install -r requirements.txt --system
 
-      - name: mkdocs build
-        run: uv run mkdocs build
+      - run: mkdocs build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
