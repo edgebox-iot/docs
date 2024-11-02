@@ -1,0 +1,10 @@
+[project]
+name = "docs"
+version = "0.1.0"
+description = "The documentation for the Edgebox project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.5.43",
+    "mkdocs>=1.6.1",
+]

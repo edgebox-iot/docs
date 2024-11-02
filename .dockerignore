@@ -4,4 +4,5 @@
 # Except
 !/src/
 !/mkdocs.yml
-!/requirements.txt
+!/uv.lock
+!/pyproject.toml
