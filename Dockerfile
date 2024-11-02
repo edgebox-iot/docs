@@ -2,11 +2,9 @@ FROM ghcr.io/astral-sh/uv:python3.13-alpine
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY . .
 
 RUN uv pip install -r requirements.txt --system
-
-COPY . .
 
 EXPOSE 8000
 
