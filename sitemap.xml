@@ -3,226 +3,181 @@
     <url>
          <loc>https://docs.edgebox.io/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/contributing/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/getting-started/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/configuration/backups/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/configuration/external-access/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/configuration/initial-setup/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/configuration/logs/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/configuration/post-install/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/configuration/updates/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/installation/cloud/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/installation/local/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/installation/other-platforms/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/installation/raspberry-pi/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/others/code-of-conduct/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/others/common-errors/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/others/system-architecture/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/backups/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/dashboard/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/settings/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/shell-access/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/storage/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/actual/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/appsmith/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/bitwarden/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/calibre/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/chatpad/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/conduit/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/filebrowser/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/focalboard/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/gitea/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/home-assistant/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/invidious/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/jellyfin/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/jupyter/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/listmonk/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/n8n/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/nextcloud/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/planka/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/pocketbase/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/tandoor/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/traggo/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/umami/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/uptimekuma/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.edgebox.io/usage/edgeapps/webrcade/</loc>
          <lastmod>2024-11-02</lastmod>
-         <changefreq>daily</changefreq>
     </url>
 </urlset>
