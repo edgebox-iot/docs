@@ -1,10 +1,10 @@
-FROM python:3.11-slim-bullseye
+FROM ghcr.io/astral-sh/uv:python3.13-alpine
 
 WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN uv pip install -r requirements.txt --system
 
 COPY . .
 
